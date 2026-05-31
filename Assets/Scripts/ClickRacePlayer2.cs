@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ClickRacePlayer : MonoBehaviour
+public class ClickRacePlayer2 : MonoBehaviour
 {
     public float baseSpeed = 2f;
     public float clickBoost = 0.7f;
@@ -17,7 +17,7 @@ public class ClickRacePlayer : MonoBehaviour
 
     void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             currentSpeed += clickBoost;
             currentSpeed = Mathf.Clamp(currentSpeed, baseSpeed, maxSpeed);

@@ -1,16 +1,26 @@
 using UnityEngine;
 
-public class CameraFollow2D : MonoBehaviour
+public class CameraFollowRace : MonoBehaviour
 {
-    public Transform target;
+    public Transform player1;
+    public Transform player2;
+
     public float followSpeed = 5f;
-    public Vector3 offset = new Vector3(0, 0, -10);
 
     void LateUpdate()
     {
-        if (target == null) return;
+        float midpointX = (player1.position.x + player2.position.x) / 2f;
 
-        Vector3 desiredPosition = target.position + offset;
-        transform.position = Vector3.Lerp(transform.position, desiredPosition, followSpeed * Time.deltaTime);
+        Vector3 targetPosition = new Vector3(
+            midpointX,
+            transform.position.y,
+            transform.position.z
+        );
+
+        transform.position = Vector3.Lerp(
+            transform.position,
+            targetPosition,
+            followSpeed * Time.deltaTime
+        );
     }
 }
