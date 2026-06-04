@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickRacePlayer2
   baseSpeed: 0
-  clickBoost: 0.5
+  clickBoost: 0.6
   maxSpeed: 10
   slowdownRate: 3
 --- !u!58 &432354330
@@ -568,7 +568,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8526364104391272620, guid: 4f70f217ed89b461586949a4b1b27196, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickRacePlayer
   baseSpeed: 0
-  clickBoost: 0.5
+  clickBoost: 0.6
   maxSpeed: 10
   slowdownRate: 3
 --- !u!212 &814381255
@@ -1428,7 +1428,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6136058303390988128, guid: 597d3d4ae3efa4395a49f442c876fceb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
