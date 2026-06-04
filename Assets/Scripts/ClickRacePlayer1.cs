@@ -17,6 +17,9 @@ public class ClickRacePlayer1 : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.raceStarted)
+            return;
+
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             currentSpeed += clickBoost;

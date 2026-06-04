@@ -21,6 +21,8 @@ public class AIRacer : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.raceStarted)
+            return;
         if (Time.time >= nextMashTime)
         {
             float randomBoost = Random.Range(clickBoost * 0.5f, clickBoost * 1.5f);
