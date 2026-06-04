@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickRacePlayer2
   baseSpeed: 0
-  clickBoost: 0.55
+  clickBoost: 0.5
   maxSpeed: 10
   slowdownRate: 3
 --- !u!58 &432354330
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIRacer
   baseSpeed: 2
-  clickBoost: 0.45
+  clickBoost: 0.2
   maxSpeed: 10
   slowdownRate: 3
   mashInterval: 0.8
@@ -570,7 +570,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -8526364104391272620, guid: 4f70f217ed89b461586949a4b1b27196, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -589,8 +589,8 @@ Transform:
   m_GameObject: {fileID: 655971935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.3, y: 3.19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.3, y: 3.5, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -663,7 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickRacePlayer
   baseSpeed: 0
-  clickBoost: 0.55
+  clickBoost: 0.5
   maxSpeed: 10
   slowdownRate: 3
 --- !u!212 &814381255
@@ -1040,7 +1040,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FinishLine
   player1: {fileID: 814381256}
   player2: {fileID: 432354332}
-  spawnPoint: {fileID: 0}
   ai1: {fileID: 1184862418}
   ai2: {fileID: 655971938}
   ai1Script: {fileID: 1184862416}
@@ -1196,7 +1195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIRacer
   baseSpeed: 2
-  clickBoost: 0.45
+  clickBoost: 0.2
   maxSpeed: 10
   slowdownRate: 3
   mashInterval: 0.8
@@ -1250,7 +1249,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 6136058303390988128, guid: 597d3d4ae3efa4395a49f442c876fceb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1269,8 +1268,8 @@ Transform:
   m_GameObject: {fileID: 1184862415}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.3, y: 1.28, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.3, y: 1.3, z: 0}
+  m_LocalScale: {x: 0.55, y: 0.55, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1283,8 +1282,8 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 432354332}
   - {fileID: 814381256}
-  - {fileID: 1017867130}
   - {fileID: 912747800}
   - {fileID: 1184862418}
   - {fileID: 655971938}
+  - {fileID: 1017867130}
   - {fileID: 854306369}
