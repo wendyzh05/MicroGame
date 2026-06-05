@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class FinishLine : MonoBehaviour
 {
@@ -6,10 +8,15 @@ public class FinishLine : MonoBehaviour
     public Transform player2;
     public Transform ai1;
     public Transform ai2;
-    public AIRacer ai1Script;
-    public AIRacer ai2Script;
+
+    public TextMeshProUGUI winnerText;
 
     private bool raceFinished = false;
+
+    void Start()
+    {
+        winnerText.gameObject.SetActive(false);
+    }
 
     void Update()
     {
@@ -17,25 +24,34 @@ public class FinishLine : MonoBehaviour
 
         if (player1.position.x >= transform.position.x)
         {
-            raceFinished = true;
-            Debug.Log("Player 1 wins!");
+            EndRace("Pikachu wins!");
         }
         else if (player2.position.x >= transform.position.x)
         {
-            raceFinished = true;
-            Debug.Log("Player 2 wins!");
+            EndRace("Meowth wins!");
         }
-
         else if (ai1.position.x >= transform.position.x)
         {
-            raceFinished = true;
-            Debug.Log("AI 1 wins!");
+            EndRace("Reshiram wins!");
         }
         else if (ai2.position.x >= transform.position.x)
         {
-            raceFinished = true;
-            Debug.Log("AI 2 wins!");
+            EndRace("Sylveon wins!");
         }
     }
 
+    void EndRace(string message)
+    {
+        raceFinished = true;
+
+        winnerText.gameObject.SetActive(true);
+        winnerText.text = message;
+
+        Invoke(nameof(GoToMainMenu), 3f);
+    }
+
+    void GoToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
