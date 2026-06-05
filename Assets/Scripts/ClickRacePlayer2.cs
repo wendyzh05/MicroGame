@@ -17,6 +17,9 @@ public class ClickRacePlayer2 : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.raceStarted)
+            return;
+
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             currentSpeed += clickBoost;

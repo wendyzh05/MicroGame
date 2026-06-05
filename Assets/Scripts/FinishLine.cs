@@ -40,18 +40,21 @@ public class FinishLine : MonoBehaviour
         }
     }
 
+    void GoToMainMenu()
+    {
+        Debug.Log("GOING TO MAIN MENU");
+        SceneManager.LoadScene("MainMenu");
+    }
+
     void EndRace(string message)
     {
+        Debug.Log("FINISHLINE END RACE: " + message);
+
         raceFinished = true;
 
         winnerText.gameObject.SetActive(true);
         winnerText.text = message;
 
         Invoke(nameof(GoToMainMenu), 3f);
-    }
-
-    void GoToMainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
     }
 }
