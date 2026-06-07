@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickRacePlayer2
   baseSpeed: 0
-  clickBoost: 0.6
+  clickBoost: 0.55
   maxSpeed: 10
   slowdownRate: 3
 --- !u!58 &432354330
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIRacer
   baseSpeed: 2
-  clickBoost: 0.2
+  clickBoost: 0.25
   maxSpeed: 10
   slowdownRate: 3
   mashInterval: 0.8
@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIRacer
   baseSpeed: 2
-  clickBoost: 0.2
+  clickBoost: 0.25
   maxSpeed: 10
   slowdownRate: 3
   mashInterval: 0.8
